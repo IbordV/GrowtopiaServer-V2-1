@@ -330,5 +330,5 @@ inline void sendWorld(ENetPeer* peer, World* worldInfo) {
 			}
 		}
 	}
-	delete[] data;
+	free(data); // frees the memory after memory allocation
 }
